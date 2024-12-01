@@ -85,4 +85,4 @@ def AutoFilesXMLAll_TocXML(folder_path: str):
         raise IOError(f"Failed to write XML file '@tocFiles.xml': {e}")
 
 
-#AutoFilesXMLAll_TocXML('../Example/files_xml_test')  # Example use
+#AutoFilesXMLAll_TocXML('../Example/files_xml_test')  # Example of use
