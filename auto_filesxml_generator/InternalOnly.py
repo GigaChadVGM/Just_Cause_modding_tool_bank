@@ -63,4 +63,4 @@ def AutoFilesXMLInternalOnly(folder_path: str):
 
 
 
-# AutoFilesXMLInternalOnly('../Example/files_xml_test') # Example use
+# AutoFilesXMLInternalOnly('../Example/files_xml_test') # Example of use
