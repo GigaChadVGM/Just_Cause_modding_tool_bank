@@ -59,4 +59,4 @@ def AutoFiledXMLInternalOnly_TocXML(folder_path: str):
     except IOError as e:
         raise IOError(f"Failed to write XML file '@tocFiles.xml': {e}")
 
-# AutoFiledXMLInternalOnly_TocXML('../Example/files_xml_test') # Example use
+# AutoFiledXMLInternalOnly_TocXML('../Example/files_xml_test') # Example of use
