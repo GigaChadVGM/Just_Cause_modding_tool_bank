@@ -60,4 +60,4 @@ def AutoFiledXMLInternalOnly_FilesXML(folder_path: str):
         raise IOError(f"Failed to write XML file '@files.xml': {e}")
 
 
-# AutoFiledXMLInternalOnly_FilesXML('../Example/files_xml_test') # Example use
+# AutoFiledXMLInternalOnly_FilesXML('../Example/files_xml_test') # Example of use
