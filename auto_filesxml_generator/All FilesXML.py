@@ -85,4 +85,4 @@ def AutoFilesXMLAll_FilesXML(folder_path: str):
         raise IOError(f"Failed to write XML file '@files.xml': {e}")
 
 
-# AutoFilesXMLAll_FilesXML('../Example/files_xml_test') # Example use
+# AutoFilesXMLAll_FilesXML('../Example/files_xml_test') # Example of use
