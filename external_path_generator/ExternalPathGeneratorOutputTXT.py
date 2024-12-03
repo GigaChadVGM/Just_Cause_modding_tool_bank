@@ -1,6 +1,6 @@
 import sys
 from ExternalPathGenerator import ExternalPathGenerator as EPG
-from folder_analyser import FolderAnalyser
+from folder_analyzer import FolderAnalyzer
 
 RED = "\033[91m"
 GREEN = "\033[92m"
@@ -19,7 +19,7 @@ def save_as_file(path):
 
 if __name__ == "__main__":
     paths = sys.argv[1:]
-    if FolderAnalyser(paths).exists:
+    if FolderAnalyzer(paths).exists:
         try:
             save_as_file(paths)
             input(GREEN + "\nProcess Successful, press enter to exit." + RESET)
