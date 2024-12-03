@@ -6,7 +6,7 @@ GREEN = "\033[92m"
 RESET = "\033[0m"
 
 try:
-    from folder_analyser import FolderAnalyser
+    from folder_analyzer import FolderAnalyzer
 except ImportError as e:
     print(RED + f"\nError importing FolderAnalyser: {e}" + RESET)
     input(RED + "Process Failed, press enter to exit." + RESET)
@@ -146,7 +146,7 @@ def ddsc_to_dds(ddsc_path: str):
 
 if __name__ == "__main__":
     paths = sys.argv[1:]
-    textures = FolderAnalyser(paths)
+    textures = FolderAnalyzer(paths)
     if textures.exists:
         try:
             for texture in textures.file_list:
