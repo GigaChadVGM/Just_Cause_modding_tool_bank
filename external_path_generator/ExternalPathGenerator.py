@@ -1,7 +1,7 @@
 import os
 import sys
 import xml.etree.ElementTree as ET
-from folder_analyser import FolderAnalyser
+from folder_analyzer import FolderAnalyzer
 
 RED = "\033[91m"
 GREEN = "\033[92m"
@@ -39,7 +39,7 @@ def ExternalPathGenerator(paths: list):
 
 if __name__ == "__main__":
     paths = sys.argv[1:]
-    paths_auto = FolderAnalyser(paths)
+    paths_auto = FolderAnalyzer(paths)
     if paths_auto.exists:
         try:
             ExternalPathGenerator(paths_auto.file_list)
