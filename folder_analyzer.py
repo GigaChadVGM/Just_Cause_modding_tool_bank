@@ -4,7 +4,7 @@ RED = "\033[91m"
 GREEN = "\033[92m"
 RESET = "\033[0m"
 
-class FolderAnalyser:
+class FolderAnalyzer:
     def __init__(self, paths: list):
         """
         Class that gives all the files without folders in a selection of folders
