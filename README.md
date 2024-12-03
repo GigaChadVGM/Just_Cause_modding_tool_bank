@@ -1,6 +1,6 @@
-# Just Cause 3 modding tool bank
+# Just Cause modding tool bank
 
-A collection of powerful tools to elevate and accelerate your Just Cause 3 modding experience 🛠️.
+A collection of powerful tools to elevate and accelerate your Just Cause modding experience 🛠️.
 Currently contains 1 tool category and 6 variants
 
 # Tools list
@@ -10,7 +10,7 @@ Currently contains 1 tool category and 6 variants
 #### Description
 This generator is capable of creating two xml files that contain the relative paths to each file in a folder, including files in its sub-folders, as well as existing external paths.  
 
-These xml files can then be used as a reference for repacking .ee archives using standard JC3 tools.
+These xml files can then be used as a reference for repacking .ee archives using standard JC tools.
 #### Pros
 - <span style="color:rgb(0, 176, 80)">Reduces the time spent on adding files</span>
 - <span style="color:rgb(0, 176, 80)">Reduces writing errors</span>
