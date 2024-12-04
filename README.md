@@ -53,6 +53,9 @@ Based on [Brooen](https://github.com/Brooen/)'s script: https://github.com/Brooe
 
 # Usage
 ### EXEs
-ddsc/dds converter: drag and drop files and/or folders at the same time
-External path generator: drag and drop files and/or folders at the same time
-@files.xml and @tocFiles.xml generator: drag and drop only one folder
+#### ddsc/dds converter
+Drag and drop files and/or folders at the same time
+#### External path generator
+Drag and drop files and/or folders at the same time
+#### @files.xml and @tocFiles.xml generator
+Drag and drop only one folder
