@@ -1,11 +1,8 @@
 import os
-
-RED = "\033[91m"
-GREEN = "\033[92m"
-RESET = "\033[0m"
+from colors import *
 
 class FolderAnalyzer:
-    def __init__(self, paths: list):
+    def __init__(self, paths, is_xml_generator: bool = False):
         """
         Class that gives all the files without folders in a selection of folders
         :param paths: path of one or many folders
@@ -14,8 +11,11 @@ class FolderAnalyzer:
             print(RED + "No files or directories were provided." + RESET)
             input(RED + "\nProcess Failed, press enter to exit." + RESET)
             self.exists = False
+            return
         else:
             self.exists = True
+
+        paths = paths if isinstance(paths, list) else [paths]
 
         self.folder = []
 
@@ -27,7 +27,12 @@ class FolderAnalyzer:
                     list_paths.remove(element)
                 for root_dir, _, files in os.walk(element):
                     for file in files:
-                        list_paths.append(os.path.join(root_dir, file))
+                        if is_xml_generator:
+                            if not file.endswith('.xml'):
+                                relative_path = os.path.relpath(os.path.join(str(root_dir), file), start=element)
+                                list_paths.append(relative_path.replace('\\', '/'))
+                        else:
+                            list_paths.append(os.path.join(root_dir, file))
             else:
                 list_paths = paths
 
