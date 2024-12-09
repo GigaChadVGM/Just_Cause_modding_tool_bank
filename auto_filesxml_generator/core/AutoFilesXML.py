@@ -47,7 +47,7 @@ class AutoFilesXML:
             :return: give the final files list as xml elements
             """
             global file_list_xml
-            check(["folder_content", "single epe"], og_folder, files)
+            check(["folder content", "single epe"], og_folder, files)
 
             def sort(path: str):
                 for ext, prio in priorities.items():
@@ -90,7 +90,7 @@ class AutoFilesXML:
             :param og_folder: original folder_path
             :return: external paths as xml elements.
             """
-            check(["folder_content"], og_folder, None)
+            check(["folder content"], og_folder, None)
             files_to_check = ['@tocFiles.xml', '@files.xml']
             existing_files = [file_name for file_name in files_to_check if file_name in os.listdir(og_folder)]
             check(["existing file"], None, existing_files)
@@ -121,7 +121,7 @@ class AutoFilesXML:
             :param files_to_save: specifies how many files has to be saved and with which name and which extensions,
             Usage = {file_name.xml: archive_extension, ...}.
             """
-            check(["folder_content"], og_folder, None)
+            check(["folder content"], og_folder, None)
 
             external_content = external_return(og_folder)
             internal_content = main_return(files, og_folder, {'None': None})
