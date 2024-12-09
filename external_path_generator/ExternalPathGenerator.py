@@ -2,10 +2,7 @@ import os
 import sys
 import xml.etree.ElementTree as ET
 from folder_analyzer import FolderAnalyzer
-
-RED = "\033[91m"
-GREEN = "\033[92m"
-RESET = "\033[0m"
+from colors import *
 
 def ExternalPathGenerator(paths: list):
     """
