@@ -96,12 +96,12 @@ def ddsc_converter(texture_path: str, mode: str = "srgb"):
 
 if __name__ == "__main__":
     paths = sys.argv[1:]
-    textures = FolderAnalyzer(paths)
-    if textures.exists:
-        try:
-            for texture in textures.file_list:
-                ddsc_converter(texture)
-            input(GREEN + "Process Successful, press enter to exit." + RESET)
-        except Exception as e:
-            print(RED + f"Error : {e}" + RESET)
-            input(RED + "Process Failed, press enter to exit." + RESET)
+    try:
+        paths_auto = FolderAnalyzer(paths, "multiple")
+
+        for texture in paths_auto.file_list:
+            ddsc_converter(texture)
+        input(GREEN + "Process Successful, press enter to exit." + RESET)
+    except Exception as e:
+        print(RED + f"Error : {e}" + RESET)
+        input(RED + "Process Failed, press enter to exit." + RESET)
