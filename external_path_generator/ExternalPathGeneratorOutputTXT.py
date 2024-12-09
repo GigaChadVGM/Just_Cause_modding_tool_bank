@@ -1,10 +1,7 @@
 import sys
 from ExternalPathGenerator import ExternalPathGenerator as EPG
 from folder_analyzer import FolderAnalyzer
-
-RED = "\033[91m"
-GREEN = "\033[92m"
-RESET = "\033[0m"
+from colors import *
 
 
 def save_as_file(path):
