@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<files extension=".ee">
+  <file name="file (1).txt">file (1).txt</file>
+  <file name="file (2).txt">file (2).txt</file>
+  <file name="file (3).txt">file (3).txt</file>
+  <file name="file (4).txt">file (4).txt</file>
+  <file name="folder/file (4).txt">folder\file (4).txt</file>
+  <file name="folder/file (5).txt">folder\file (5).txt</file>
+  <file name="folder/file (6).txt">folder\file (6).txt</file>
+  <file name="folder/file (7).txt">folder\file (7).txt</file>
+  <file name="folder/file (8).txt">folder\file (8).txt</file>
+  <file name="folder/subfolder/file (10).txt">folder\subfolder\file (10).txt</file>
+  <file name="folder/subfolder/file (11).txt">folder\subfolder\file (11).txt</file>
+  <file name="folder/subfolder/file (12).txt">folder\subfolder\file (12).txt</file>
+  <file name="folder/subfolder/file (13).txt">folder\subfolder\file (13).txt</file>
+  <file name="folder/subfolder/file (9).txt">folder\subfolder\file (9).txt</file>
+  <file name="folder/subfolder/file.txt">folder\subfolder\file.txt</file>
+</files>
