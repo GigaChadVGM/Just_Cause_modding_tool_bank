@@ -1,8 +1,6 @@
 # Just Cause modding tool bank
 
 A collection of powerful tools to elevate and accelerate your Just Cause modding experience 🛠️.
-Currently contains 1 tool category and 6 variants
-
 # Tools list
 
 ### @files.xml and @tocFiles.xml generator
